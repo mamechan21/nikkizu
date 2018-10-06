@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @nikki.user %>
+</p>
+
+<p>
+  <strong>Article:</strong>
+  <%= @nikki.article %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @nikki.category %>
+</p>
+
+<%= link_to 'Edit', edit_nikki_path(@nikki) %> |
+<%= link_to 'Back', nikkis_path %>

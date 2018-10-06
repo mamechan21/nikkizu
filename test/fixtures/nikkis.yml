@@ -1,0 +1,24 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+ one:
+   id: 1
+   user: Mame
+   article: 今日食べたおいしいもの。
+   category: グルメ
+
+ two:
+   id: 2
+   user: Mamechan
+   article: 大きな虹。
+   category: 旅
+  
+  
+# one:
+#   user: MyString
+#   article: MyText
+#   category: MyString
+
+# two:
+#   user: MyString
+#   article: MyText
+#   category: MyString
