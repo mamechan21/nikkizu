@@ -1,24 +1,18 @@
- <nav class="navbar navbar-default">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample7">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="/">
-				にっき〜ず！<small>(★毎日の思い出を日記に綴ろう！★)</small>
-			</a>
-		</div>
-		
-		<div class="collapse navbar-collapse" id="navbarEexample7">
-			<p class="navbar-text navbar-right">
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+		    <%= link_to "にっき〜ず！（★毎日の思い出を日記に綴ろう！★）", root_path, id: "logo" %>
+	    <nav>	
+	        <ul class="nav navbar-nav navbar-right">
+			  <li><%= link_to "にっき〜ず！について", about_path %></li>
+			  <li><%= link_to "姉妹サイト", link_path %></li>
+			  <li><a href="#" class="navbar-link">新規登録</a></li>
+			  <li><a href="#" class="navbar-link">ログイン</a></li>
+			</ul>
+	    </nav>
 			  <!--<%= link_to "users", "#" %>-->
-			  <a href="#" class="navbar-link">にっき〜ず！について</a>
-			  <a href="#" class="navbar-link">姉妹サイト</a>
-			  <a href="#" class="navbar-link">新規登録</a>
-			  <a href="#" class="navbar-link">ログイン</a></p>
+			  <!--<p class="navbar-text navbar-right">-->
+			  <!--<a href="#" class="navbar-link">新規登録</a>-->
+			  <!--<a href="#" class="navbar-link">ログイン</a></p>-->
+			<!--</div>-->
 		</div>
-	</div>
-</nav>
+</header>

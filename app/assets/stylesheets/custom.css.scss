@@ -33,10 +33,88 @@ ul li{
   margin-right: 10px;
 }
 
+.slideshow  {
+  text-align: left;
+  // width: 300px;
+  // margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+/* nav picture */
+
+// nav ul {
+//   padding: 0;
+//   margin: 0;
+//   list-style: none;
+// }
+
+.picture ul {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+.picture li {
+  padding: 6px 0 0 0;
+  float: left;
+  position: relative;
+  left: -50%;
+  float: left;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.picture li:hover {
+  opacity: 1;
+}
+
+.picture li.current {
+  opacity: 1;
+}
+
+.picture li + li {
+  margin-left: 6px;
+}
+
+
+ 
+
+
 
 // ヘッダー 
 .navbar {
   background-color: #0080ff;
+  padding-top: 5px;
+  color: #191970;
+}
+
+
+// #navbarEexample7 {
+//     float: right;
+// }
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 12px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#logo:hover {
+  color: #ffdead;
+  text-decoration: none;
 }
 
 
@@ -50,16 +128,15 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
-  text-align: center;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 30px;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
   font-weight: normal;
-  color: #999;
+  color: #000000;
 }
 
 p {
@@ -89,4 +166,34 @@ footer a:hover {
 footer ul {
   float: right;
   list-style: none;
+}
+
+.mybox{
+    border: 1px solid #f0b8bf;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+.mybox:before{
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 5px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 5px;
+    z-index: -1;
+}
+.mybox:after{
+    background: repeating-linear-gradient(-45deg, #f5d5da, #f5d5da 5px, #fcf0f1 0, #fcf0f1 10px);
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
 }
